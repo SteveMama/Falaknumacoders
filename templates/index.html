@@ -1,0 +1,110 @@
+<html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Pragma" content="no-cache">
+            <title>X-Ray Scanning App</title>
+            <meta name="description" content="Figma htmlGenerator">
+            <meta name="author" content="htmlGenerator">
+            <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+            <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+            <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+            <link rel="stylesheet" href="../static/css/styles.css">
+            
+            <style>
+              /*
+                Figma Background for illustrative/preview purposes only.
+                You can remove this style tag with no consequence
+              */
+              body {background: #E5E5E5; }
+            </style>
+          
+          </head>
+          
+          <body>
+            <div class=e0_398>
+                <div class=e29_221>
+                    <span  class="e22_2">Upload Image</span>
+                 </div>
+                 <div class=e11_3>
+                    <span  class="e22_0">Falaknuma Coders</span>
+                    <div class=e29_211>
+                        <div class=e0_939>
+                        <span  class="e0_938">Dashboard</span>
+                        <span  class="e0_940">Disease Prediction</span>
+                        <span  class="e0_952">Upload your x-ray and check for presence of any disease</span>
+                        </div>
+                    </div>
+                    <div  class="e29_206">
+                    </div>
+                 </div>
+                 <div class=e29_239>
+                    <span  class="e29_240">Falaknuma Coders</span>
+                    <div class=e29_241>
+                        <div class=e29_242>
+                        <span  class="e29_243">Dashboard</span>
+                        <span  class="e29_244">Disease Prediction</span>
+                        <span  class="e29_245">Upload your x-ray and check for presence of any disease</span>
+                        </div>
+                     </div>
+                     <div  class="e29_246">
+                     </div>
+                  </div>
+                  <span class="e37_0">Falaknuma Coders is an app that allows the user to upload his/her x-ray image to check for the presence of any potential disease leveraging
+                    custom trained deep learing neural network in the background. The x-ray scanning application allows the user/doctor to check for the presence of any of the following diseases:
+                    <br> <b>Atelectasis | Cardiomegaly | Effusion | Infiltration | Mass | Nodule | Pneumonia<br>Pneumothorax | Consolidation | Edema | Emphysema | Fibrosis | Pleural Thickening | Hernia</b>
+                  </span>
+                  <div class=e29_231>
+                    <div class=e29_232>
+                        <span  class="e29_233">What does the app do?</span>
+                     </div>
+                   </div>
+                   <div class="e30_5"></div>
+                   <div class=e13_6>
+                    <div class=e13_7>
+                        <span  class="e13_8">Result</span>
+                        <h3 class="r_1" id="result">sdsds
+                          <span> </span>
+                        </h3>
+                     </div>
+                 </div>
+             </div>
+             <div class="d2_01">
+                <form class id="upload-file" method="post" enctype="multipart/form-data">
+                  <label for="imageUpload" class="upload-label"> </label>
+                  <input
+                    type="file"
+                    name="file"
+                    id="imageUpload"
+                    style="width: 300px; height: 40px; font-size: 18px"                    
+                    accept=".png, .jpg, .jpeg"
+                  />
+                </form>
+                <div class="image-section">
+                  <div class="d3_02">
+                    <div id="imagePreview"></div>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg"
+                      id="btn-predict"
+                      style="left:250px; width: 140px; height:px; font-size: 25px;color: rgb(245, 245, 245); background-color: rgba(19.526230730116367, 19.526230730116367, 42.56640650331974, 1); border-top-left-radius: 8.455682754516602px;
+                      border-top-right-radius: 8.455682754516602px;
+                      border-bottom-left-radius: 8.455682754516602px;
+                      border-bottom-right-radius: 8.455682754516602px"
+                    >
+                      Predict!
+                    </button>
+                  </div>
+                  <div class="d4_03"></div>
+                </div>
+              </div>
+              <div class="loader" style="display: none"></div>
+              
+            </div>
+          </body>
+          <footer>
+            <script src="../static/js/main.js?version=<?= time() ?" type="text/javascript"></script>    
+        </footer>
+      </html>
